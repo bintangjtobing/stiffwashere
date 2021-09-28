@@ -1,8 +1,13 @@
-/* ----------------------------------------------------------------
-	Custom CSS
+.header-size-custom #logo img {
+    height: 40px !important;
+}
 
-	Add all your Custom Styled CSS here for New Styles or
-	Overwriting Default Theme Styles for Better Handling Updates
------------------------------------------------------------------*/
+.justify-content-between>div:nth-child(1)>abbr:nth-child(2)>a:nth-child(1) {
+    color: rgba(255, 255, 255, 0.4);
+}
 
 
+div.mt-2>div:nth-child(2)>div:nth-child(1)>img:nth-child(1) {
+    height: 537px;
+    object-fit: cover;
+}
