@@ -49,3 +49,5 @@ Route::get('/store', 'webpageController@store');
 Route::get('/products', 'webpageController@products');
 Route::get('/contact-us', 'webpageController@contactUs');
 Route::get('/about-us', 'webpageController@aboutUs');
+Route::get('/outerwear', 'webpageController@outerwear');
+Route::get('/shirts', 'webpageController@shirts');

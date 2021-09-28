@@ -26,4 +26,12 @@ class webpageController extends Controller
     {
         return view('webpage.aboutus');
     }
+    public function outerwear()
+    {
+        return view('webpage.product.outerwear');
+    }
+    public function shirts()
+    {
+        return view('webpage.product.shirts');
+    }
 }
