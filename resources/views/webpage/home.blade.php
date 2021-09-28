@@ -479,7 +479,7 @@
             </div>
         </div>
 
-        <div class="container-fluid mt-5">
+        {{-- <div class="container-fluid mt-5">
             <div class="row">
                 <div class="col-md-6 mb-5">
                     <img src="{!!asset('webpage/demos/store/images/others/travel.jpg')!!}" alt="image" class="mb-4">
@@ -497,7 +497,7 @@
                             class="icon-line-arrow-right position-relative ml-1" style="top: 2px"></i></a>
                 </div>
             </div>
-        </div>
+        </div> --}}
 
     </div>
 </section><!-- #content end -->
