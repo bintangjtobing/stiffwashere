@@ -228,7 +228,7 @@
                                                             <div>Inquiries</div>
                                                         </a>
                                                         <ul class="sub-menu-container">
-                                                            <li class="menu-item"><a class="menu-link" href="#">
+                                                            <li class="menu-item"><a class="menu-link" href="/about-us">
                                                                     <div>About Us</div>
                                                                 </a></li>
                                                             <li class="menu-item"><a class="menu-link" href="#">
@@ -254,8 +254,9 @@
                                                             <li class="menu-item"><a class="menu-link" href="#">
                                                                     <div>Q. How do I purchase an item?</div>
                                                                 </a></li>
-                                                            <li class="menu-item"><a class="menu-link" href="#">
-                                                                    <div>Q. How do I return my items?</div>
+                                                            <li class="menu-item"><a class="menu-link"
+                                                                    href="/terms-condition#kebijakan-pengembalian-dana">
+                                                                    <div>Q. Bagaimana saya refund dana?</div>
                                                                 </a></li>
                                                             <li class="menu-item"><a class="menu-link" href="#">
                                                                     <div>Q. Shipping Charges?</div>
@@ -358,7 +359,9 @@
                             &copy;{{$Y}} Stiff Was Here - All Rights Reserved by <abbr
                                 title="MeAndCreativeLab CC">MeAndCreativeLab</abbr> | Partnership with
                             <abbr title="Boxity App"><a href="https://boxity.id">Boxity Central Indonesia</a></abbr><br>
-                            <div class="copyright-links"><a href="#">Terms of Use</a> / <a href="#">Privacy Policy</a>
+                            <div class="copyright-links"><a href="/terms-condition">Terms and condition</a> / <a
+                                    href="#">Privacy
+                                    Policy</a>
                             </div>
                         </div>
 

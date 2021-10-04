@@ -51,3 +51,5 @@ Route::get('/contact-us', 'webpageController@contactUs');
 Route::get('/about-us', 'webpageController@aboutUs');
 Route::get('/outerwear', 'webpageController@outerwear');
 Route::get('/shirts', 'webpageController@shirts');
+Route::get('/terms-condition', 'webpageController@termsCondition');
+Route::get('/privacy-policy', 'webpageController@privacyPolicy');

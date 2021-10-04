@@ -34,4 +34,12 @@ class webpageController extends Controller
     {
         return view('webpage.product.shirts');
     }
+    public function privacyPolicy()
+    {
+        return view('webpage.ToSPP.policy');
+    }
+    public function termsCondition()
+    {
+        return view('webpage.ToSPP.terms');
+    }
 }
