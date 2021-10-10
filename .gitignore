@@ -1,0 +1,14 @@
+/node_modules
+/vendor
+/storage/*.key
+/storage/log
+.env
+**/.DS_Store
+public/.DS_Store
+.tmp/
+.DS_Store
+*.code-workspace
+public/dashboard/img/author/profile
+public/storage
+public/imagePublic/
+composer.lock
