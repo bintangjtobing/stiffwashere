@@ -53,3 +53,12 @@ Route::get('/outerwear', 'webpageController@outerwear');
 Route::get('/shirts', 'webpageController@shirts');
 Route::get('/terms-condition', 'webpageController@termsCondition');
 Route::get('/privacy-policy', 'webpageController@privacyPolicy');
+Route::post('/subscription/new', 'webpageController@addSubscription');
+Route::post('/send-message', 'webpageController@sendMessage');
+Route::get('/cart', 'webpageController@cart');
+
+// Advanced
+Route::get('/products/{itemgroup_id}', 'webpageController@getItemFromItemGroup');
+Route::get('/products/{itemgroup_id}/{id}', 'webpageController@getItemDetailsFromItemGroup');
+Route::get('/add-card/{id}', 'webpageController@addToCart');
+Route::delete('remove-from-cart', 'webpageController@removeitem');

@@ -67,10 +67,10 @@
 
                             <div class="form-result"></div>
 
-                            <form class="mb-0" id="modal-subscribe-form" action="include/form.php" method="post"
-                                enctype="multipart/form-data">
+                            <form class="mb-0" id="modal-subscribe-form" action="/subscription/new" method="post">
+                                @csrf
                                 <label for="modal-subscribe-form-email">Email Address <span>*</span></label>
-                                <input type="email" name="modal-subscribe-form-email" id="modal-subscribe-form-email"
+                                <input type="email" name="email" id="modal-subscribe-form-email"
                                     class="form-control required rounded-0" placeholder="youremail@address.com">
 
                                 <input class="d-none" type="text" id="modal-subscribe-form-botcheck"
@@ -119,50 +119,11 @@
 
                             <!-- Top Cart
 							============================================= -->
-                            <div id="top-cart">
-                                <a href="#" id="top-cart-trigger" class="position-relative"><i
-                                        class="icon-line-bag"></i><span class="top-cart-number">0</span></a>
-                                <div class="top-cart-content">
-                                    <div class="top-cart-title">
-                                        <h4>Shopping Cart</h4>
-                                    </div>
-                                    <div class="top-cart-items">
-                                        <div class="top-cart-item">
-                                            <div class="top-cart-item-image">
-                                                <a href="#"><img
-                                                        src="{!!asset('webpage/demos/shop/images/items/featured/5.jpg')!!}"
-                                                        alt="Blue Shoulder Bag" /></a>
-                                            </div>
-                                            <div class="top-cart-item-desc">
-                                                <div class="top-cart-item-desc-title">
-                                                    <a href="#" class="font-weight-normal">White athletic shoe</a>
-                                                    <span class="top-cart-item-price d-block">$35.00</span>
-                                                </div>
-                                                <div class="top-cart-item-quantity font-weight-semibold">x 1</div>
-                                            </div>
-                                        </div>
-                                        <div class="top-cart-item">
-                                            <div class="top-cart-item-image">
-                                                <a href="#" class="font-weight-normal"><img
-                                                        src="{!!asset('webpage/demos/shop/images/items/featured/1.jpg')!!}"
-                                                        alt="Leather Bag" /></a>
-                                            </div>
-                                            <div class="top-cart-item-desc">
-                                                <div class="top-cart-item-desc-title">
-                                                    <a href="#" class="font-weight-normal">Round Neck Solid Light Blue
-                                                        Colour T-shirts</a>
-                                                    <span class="top-cart-item-price d-block">$12.49</span>
-                                                </div>
-                                                <div class="top-cart-item-quantity font-weight-semibold">x 2</div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="top-cart-action">
-                                        <span class="top-checkout-price font-weight-semibold text-dark">$59.98</span>
-                                        <button class="button button-dark button-small m-0">View Cart</button>
-                                    </div>
-                                </div>
-                            </div><!-- #top-cart end -->
+                            {{-- <div id="top-cart"> --}}
+                            <a href="/cart" id="top-cart-trigger" class="position-relative"><i
+                                    class="icon-line-bag"></i><span
+                                    class="top-cart-number">{{count((array)session('cart'))}}</span></a>
+                            {{-- </div><!-- #top-cart end --> --}}
                         </div>
 
                         <div id="primary-menu-trigger">
@@ -186,9 +147,6 @@
                                 <li class="menu-item current"><a class="menu-link" href="/">
                                         <div>Home</div>
                                     </a></li>
-                                <li class="menu-item current"><a class="menu-link" href="/store">
-                                        <div>Store</div>
-                                    </a></li>
                                 <li class="menu-item current"><a class="menu-link" href="/products">
                                         <div>Products</div>
                                     </a></li>
@@ -207,10 +165,9 @@
                                                                 <div class="widget">
                                                                     <address>
                                                                         <strong>Jakarta Store:</strong><br>
-                                                                        Jl. K.H. Mas Mansyur No.121, RT.10/RW.11, <br>
-                                                                        Karet
-                                                                        Tengsin, Kecamatan Tanah Abang, Kota Jakarta
-                                                                        Pusat, <br> Daerah Khusus Ibukota Jakarta 10220
+                                                                        Jl. Salam Raya No.99, RT.7/RW.6, Sukabumi
+                                                                        Utara,<br> Kec. Kb. Jeruk, Kota Jakarta Barat,
+                                                                        <br>Daerah Khusus Ibukota Jakarta 11540
                                                                     </address>
                                                                     <abbr
                                                                         title="Phone Number"><strong>Phone:</strong></abbr>
@@ -302,11 +259,6 @@
                 <div class="container-fluid">
                     <div class="row">
                         <div class="col-md-3 col-sm-6">
-                            <h4 class="text-uppercase">Shipping Worldwide</h4>
-                            <p>Minimum $999 for free Shipping. Lorem ipsum dolor sit amet, consectetur adipisicing
-                                elit. Odio sequi natus eveniet, dicta magni! Modi nihil quis quos at mollitia.</p>
-                        </div>
-                        <div class="col-md-3 col-sm-6">
                             <h4 class="text-uppercase">Free Returns</h4>
                             <p class="h6 font-weight-bold">Within 30 days Guarantee</p>
                             <p>Synergistically repurpose ethical value and backend paradigms. Holisticly architect
@@ -332,14 +284,12 @@
                             </a>
                         </div>
 
-                        <div class="col-md-3 col-sm-6">
+                        <div class="col-md-6 col-sm-6">
                             <h4 class="text-uppercase">Our Stores</h4>
                             <address>
                                 <strong>Jakarta Store:</strong><br>
-                                Jl. K.H. Mas Mansyur No.121, RT.10/RW.11, <br>
-                                Karet
-                                Tengsin, Kecamatan Tanah Abang, Kota Jakarta
-                                Pusat, <br> Daerah Khusus Ibukota Jakarta 10220
+                                Jl. Salam Raya No.99, RT.7/RW.6, Sukabumi Utara,<br> Kec. Kb. Jeruk, Kota Jakarta Barat,
+                                <br>Daerah Khusus Ibukota Jakarta 11540
                             </address>
                             <abbr title="Time"><strong>Timing:</strong></abbr> Every day: 10am – 7pm<br>
                         </div>
@@ -393,6 +343,7 @@
     <!-- Footer Scripts
 	============================================= -->
     <script src="{!!asset('webpage/js/functions.js')!!}"></script>
+    @yield('scripts')
 
     <script>
         $(document).ready(changeHeaderColor);

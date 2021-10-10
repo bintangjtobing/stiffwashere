@@ -9,7 +9,7 @@ window.SEMICOLON_notificationInit = function( $notifyEl ){
 	let element		= $notifyEl,
 		elPosition	= element.attr('data-notify-position') || 'top-right',
 		elType		= element.attr('data-notify-type'),
-		elMsg		= element.attr('data-notify-msg') || 'Please set a message!',
+		elMsg		= element.attr('data-notify-msg') || 'Success!',
 		elTimeout	= element.attr('data-notify-timeout') || 5000,
 		elClose		= element.attr('data-notify-close');
 
