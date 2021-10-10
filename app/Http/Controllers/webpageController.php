@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\inboxMessage;
 use App\inventoryItem;
 use App\itemGroup;
+use App\stockGroup;
 use App\subscriptions;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
@@ -20,7 +21,8 @@ class webpageController extends Controller
                 ->inRandomOrder()
                 ->get();
         }
-        return view('webpage.home', ['itemGroup' => $itemGroup]);
+        $stock = stockGroup::orderBy('created_at', 'DESC')->get();
+        return view('webpage.home', ['itemGroup' => $itemGroup, 'stock' => $stock]);
         // return $itemGroup;
     }
     public function store()
@@ -50,9 +52,21 @@ class webpageController extends Controller
     {
         return view('webpage.product.outerwear');
     }
-    public function shirts()
+    public function groupProduct($stockgroup_id)
     {
-        return view('webpage.product.shirts');
+        $item = DB::table('inventory_items')
+            ->join('stock_groups', 'inventory_items.stock_group', '=', 'stock_groups.id')
+            ->select('inventory_items.*', 'stock_groups.stockgroup_id', 'stock_groups.name', 'stock_groups.remarks',)
+            ->where('stockgroup_id', $stockgroup_id)
+            ->orderBy('inventory_items.created_at', 'DESC')
+            ->get();
+        foreach ($item as $itemGals => $items) {
+            $item[$itemGals]->img = DB::table('inventory-items-images')
+                ->where('itemid', $items->id)
+                ->inRandomOrder()
+                ->get();
+        }
+        return view('webpage.product.shirts', ['item' => $item]);
     }
     public function privacyPolicy()
     {
@@ -118,6 +132,35 @@ class webpageController extends Controller
             ->join('item_groups', 'inventory_items.item_group', '=', 'item_groups.id')
             ->select('inventory_items.*', 'item_groups.itemgroup_id', 'item_groups.name', 'item_groups.remarks',)
             ->where('itemgroup_id', $itemgroup_id)
+            ->orderBy('inventory_items.created_at', 'DESC')
+            ->get();
+        foreach ($itemRelated as $itemGalss => $itemsRelated) {
+            $itemRelated[$itemGalss]->img = DB::table('inventory-items-images')
+                ->where('itemid', $itemsRelated->id)
+                ->inRandomOrder()
+                ->get();
+        }
+        return view('webpage.product.detail', ['item' => $item, 'itemRelated' => $itemRelated]);
+        // return $item;
+    }
+    public function getItemDetailsFromStockGroup($stockgroup_id, $id)
+    {
+        $item = DB::table('inventory_items')
+            ->join('stock_groups', 'inventory_items.item_group', '=', 'stock_groups.id')
+            ->select('inventory_items.*', 'stock_groups.stockgroup$stockgroup_id', 'stock_groups.name', 'stock_groups.remarks',)
+            ->where('inventory_items.id', $id)
+            ->orderBy('inventory_items.created_at', 'DESC')
+            ->get();
+        foreach ($item as $itemGals => $items) {
+            $item[$itemGals]->img = DB::table('inventory-items-images')
+                ->where('itemid', $items->id)
+                ->inRandomOrder()
+                ->get();
+        }
+        $itemRelated = DB::table('inventory_items')
+            ->join('stock_groups', 'inventory_items.item_group', '=', 'stock_groups.id')
+            ->select('inventory_items.*', 'stock_groups.stockgroup$stockgroup_id', 'stock_groups.name', 'stock_groups.remarks',)
+            ->where('stockgroup$stockgroup_id', $stockgroup_id)
             ->orderBy('inventory_items.created_at', 'DESC')
             ->get();
         foreach ($itemRelated as $itemGalss => $itemsRelated) {

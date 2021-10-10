@@ -18,10 +18,10 @@
                             <p class="mb-4" data-animate="fadeInUp" data-delay="100">We effort you the best collection
                                 of us.</p>
                             <div>
-                                <a href="/shirts" data-animate="fadeInUp" data-delay="200"
-                                    class="button button-large button-white button-light">Shirt</a>
-                                <a href="/outerwear" data-animate="fadeInUp" data-delay="200"
-                                    class="button button-large button-white button-light">Outerwear</a>
+                                @foreach ($stock as $stock)
+                                <a href="/group/{{$stock->stockgroup_id}}" data-animate="fadeInUp" data-delay="200"
+                                    class="button button-large button-white button-light">{{$stock->name}}</a>
+                                @endforeach
                             </div>
                         </div>
                     </div>
