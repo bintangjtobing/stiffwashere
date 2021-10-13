@@ -11,3 +11,28 @@ div.mt-2>div:nth-child(2)>div:nth-child(1)>img:nth-child(1) {
     height: 537px;
     object-fit: cover;
 }
+
+.bankList img {
+    width: 170px;
+}
+
+.norek {
+    background-color: rgba(0, 0, 0, .1);
+    padding: 1rem;
+    border-radius: .25rem;
+}
+
+.norek h2 {
+    margin-bottom: 0;
+}
+
+.payment h3 {
+    font-weight: 400;
+}
+
+.payment .orderNum {
+    background-color: rgba(0, 0, 0, .4);
+    padding: .35rem;
+    font-weight: 700;
+    border-radius: .25rem;
+}

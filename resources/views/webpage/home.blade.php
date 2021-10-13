@@ -61,7 +61,7 @@
     <div class="content-wrap pb-0">
 
         <!-- Login/Register Modal -->
-        <div class="modal-register mfp-hide" id="modal-register">
+        {{-- <div class="modal-register mfp-hide" id="modal-register">
             <div class="card mx-auto" style="max-width: 540px;">
                 <div class="card-header py-3 bg-transparent center">
                     <h3 class="mb-0 font-weight-normal">Hello, Welcome Back</h3>
@@ -93,7 +93,7 @@
                     <p class="mb-0">Don't have an account? <a href="#"><u>Sign up</u></a></p>
                 </div>
             </div>
-        </div>
+        </div> --}}
 
         <div class="container-fluid">
             <div class="mx-auto center bottommargin" style="max-width: 700px">
@@ -110,29 +110,22 @@
 
         <div class="container-fluid">
             <div class="row mt-2">
+                @foreach ($stocks as $itemStock)
                 <div class="col-md-6 mb-5">
                     <div class="card cat-card rounded-0 border-0 dark">
-                        <img src="{!!asset('webpage/asset/images/shirts.jpg')!!}" class="card-img rounded-0" alt="...">
+                        @foreach ($itemStock->img as $itemImg)
+                        <img src="{{$itemImg->file}}" class="card-img rounded-0">
+                        @endforeach
                         <div class="d-flex align-items-start flex-column card-img-overlay bg p-4">
                             <h3 class="h3 text-white ls--1 font-weight-bold mt-2 mb-auto"></h3>
-                            <h3 class="h2 text-white ls--1 font-weight-bold mb-4">Shirts</h3>
-                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. </p>
-                            <a href="/shirts" class="button button button-white button-light ml-0">Shop Now</a>
+                            <h3 class="h2 text-white ls--1 font-weight-bold mb-4">{{$itemStock->name}}</h3>
+                            {{-- <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. </p> --}}
+                            <a href="/group/{{$itemStock->stockgroup_id}}"
+                                class="button button button-white button-light ml-0">Shop Now</a>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6 mb-5">
-                    <div class="card cat-card rounded-0 border-0 dark">
-                        <img src="{!!asset('webpage/asset/images/outerwear.jpg')!!}" class="card-img rounded-0"
-                            alt="...">
-                        <div class="d-flex align-items-start flex-column card-img-overlay bg p-4">
-                            <h3 class="h3 text-white ls--1 font-weight-bold mt-2 mb-auto"></h3>
-                            <h3 class="h2 text-white ls--1 font-weight-bold mb-4">Outerwear</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                            <a href="/outerwear" class="button button button-white button-light ml-0">Shop Now</a>
-                        </div>
-                    </div>
-                </div>
+                @endforeach
             </div>
         </div>
 

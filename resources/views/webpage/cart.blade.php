@@ -35,101 +35,123 @@
 </section>
 @endif
 <section id="content">
-    <div class="modal fade" id="requestquote" data-backdrop="static" data-keyboard="false" tabindex="-1"
-        aria-labelledby="staticBackdropLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <form action="/request-quotation" method="POST">
-                    {{ csrf_field() }}
-                    <div class="modal-header">
-                        <h4 class="modal-title" id="staticBackdropLabel">Send Enquiry</h4>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                    </div>
-                    <div class="modal-body">
-                        <div class="form-row">
-                            <div class="col-lg-12">
-                                <div class="form-group">
-                                    <input type="text" name="request_name" placeholder="Your Name" id=""
-                                        class="form-control">
-                                </div>
-                                <div class="form-group">
-                                    <input type="text" name="request_company" placeholder="Your Company Name" id=""
-                                        class="form-control">
-                                </div>
-                                <div class="form-group">
-                                    <input type="email" name="email" placeholder="Your Valid Email Address" id=""
-                                        class="form-control">
-                                </div>
-                                <div class="form-group">
-                                    <input type="tel" name="phone" placeholder="Phone Number" id=""
-                                        class="form-control">
-                                </div>
-                                <div class="form-group">
-                                    <textarea name="messages" id="" cols="30" rows="10" class="form-control"
-                                        placeholder="Your Messages here..."></textarea>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="submit" class="btn btn-primary btn-block">Submit</button>
-                    </div>
-                </form>
-            </div>
-        </div>
-    </div>
     <div class="content-wrap">
         <div class="container">
-            <div class="table-responsive mb-5">
-                <table class="table cart">
-                    <thead>
-                        <tr>
-                            <th style="width: 20px;" class="cart-product-remove">&nbsp;</th>
-                            <th style="width: 250px;" class="cart-product-name">Product</th>
-                            <th style="width: 100px;" class="cart-product-quantity">Quantity</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <?php $total = 0; ?>
+            <div class="row">
+                <form action="/checkout" method="POST">
+                    @csrf
+                    <div class="col-lg-12">
+                        <h3>Item</h3>
+                        <div class="table-responsive mb-5">
+                            <table class="table cart">
+                                <thead>
+                                    <tr>
+                                        <th style="width: 20px;" class="cart-product-remove">&nbsp;</th>
+                                        <th style="width: 250px;" class="cart-product-name">Product</th>
+                                        {{-- <th style="width: 80px;" class="cart-product-quantity">@Price</th> --}}
+                                        <th style="width: 100px;" class="cart-product-quantity">Quantity</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <?php $total = 0; ?>
 
-                        @if(session('cart'))
-                        @foreach (session('cart') as $id => $details)
-                        <tr class="cart_item">
-                            <td class="cart-product-remove">
-                                <button class="btn-light btn-sm btn remove-from-cart" data-id="{{$id}}"
-                                    title="Remove this item"><i class="icon-trash2"></i></button>
-                            </td>
-                            <td class="cart-product-name">
-                                <a>{{$details['nama_item']}}</a>
-                            </td>
+                                    @if(session('cart'))
+                                    @foreach (session('cart') as $id => $details)
+                                    <tr class="cart_item">
+                                        <td class="cart-product-remove">
+                                            <button class="btn-light btn-sm btn remove-from-cart" data-id="{{$id}}"
+                                                title="Remove this item"><i class="icon-trash2"></i></button>
+                                        </td>
+                                        <td class="cart-product-name">
+                                            <a>{{$details['nama_item']}}</a>
+                                        </td>
+                                        {{-- <td class="cart-product-price">
+                                            <a>{{$details['price']}}</a>
+                                        </td> --}}
+                                        <td class="cart-product-quantity">
+                                            <div class="quantity">
+                                                <input type="button" value="-" class="minus">
+                                                <input type="text" name="quantity" value="{{$details['quantity']}}"
+                                                    class="qty" />
+                                                <input type="button" value="+" class="plus">
+                                            </div>
+                                        </td>
 
-                            <td class="cart-product-quantity">
-                                <div class="quantity">
-                                    <input type="button" value="-" class="minus">
-                                    <input type="text" name="quantity" value="{{$details['quantity']}}" class="qty" />
-                                    <input type="button" value="+" class="plus">
-                                </div>
-                            </td>
-                        </tr>
-                        @endforeach
-                        <tr class="cart_item">
-                            <td colspan="3">
-                                <div class="row">
-                                    <div class="col-lg-8 col-8 p-0 offset-4">
-                                        {{-- <a href="#" class="button button-3d m-0 float-right">Update Cart</a> --}}
-                                        <a href="#" data-toggle="modal" data-target="#requestquote"
-                                            class="button button-3d mt-0">Request Quotations</a>
-                                    </div>
-                                </div>
-                            </td>
-                        </tr>
-                        @else
-                        <tr>No item founded!</tr>
-                        @endif
-                    </tbody>
-                </table>
+                                    </tr>
+                                    @endforeach
+                                    {{-- <tr class="cart_item">
+                                    <td colspan="3">
+                                        <div class="row">
+                                            <div class="col-lg-8 col-8 p-0 offset-4">
+                                                <a href="#" data-toggle="modal" data-target="#requestquote"
+                                                    class="button button-3d mt-0">Request Quotations</a>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr> --}}
+                                    @else
+                                    <tr>No item founded!</tr>
+                                    @endif
+                                </tbody>
+                            </table>
+                            <span>Note:</span>
+                            <textarea name="ordernote" class="form-control" id="" cols="30" rows="3"></textarea>
+                        </div>
+                        <hr>
+                        <h3>Alamat Pengiriman</h3>
+                        <div class="row">
+                            <div class="col-lg-12 my-1">
+                                <span>Label Pengiriman:</span>
+                                <input type="text" name="label" id="" class="form-control"
+                                    placeholder="Tulis nama alamat" required>
+                                <small>Contoh: Alamat Rumah, Alamat Kantor, Apartemen, Dropship</small>
+                            </div>
+                            <div class="col-lg-6 my-1">
+                                <span>Nama Penerima:</span>
+                                <input type="text" name="nama_penerima" id="" class="form-control" required>
+                            </div>
+                            <div class="col-lg-6 my-1">
+                                <span>Nomor Telepon:</span>
+                                <input type="text" name="nohp" id="" class="form-control" required>
+                                <small>Contoh: 081234567890</small>
+                            </div>
+                            <div class="col-lg-6 my-1">
+                                <span>Kota atau kecamatan:</span>
+                                <input type="text" name="city" id="" class="form-control"
+                                    placeholder="Tulis nama kota / kecamatan tujuan pengiriman" required>
+                            </div>
+                            <div class="col-lg-6 my-1">
+                                <span>Kode Pos:</span>
+                                <input type="text" name="zipcode" id="" class="form-control" required>
+                            </div>
+                            <div class="col-lg-12 my-1">
+                                <span>Alamat lengkap:</span>
+                                <input type="text" name="address"
+                                    placeholder="Isi dengan nama jalan, nomor rumah, nomor kompleks, nama gedung, lantai atau nomor unit."
+                                    id="" class="form-control" required>
+                            </div>
+                        </div>
+                        <hr>
+                        <h3>Pilih Pengiriman</h3>
+                        <span>Pilih durasi:</span>
+                        <select name="pengiriman" id="" class="form-control">
+                            <option value="reguler">Reguler <span>3-4 hari</span></option>
+                            <option value="cargo">Cargo <span>5-12 hari</span></option>
+                            <option value="express">Express <span>1-2 hari</span></option>
+                        </select>
+                        <hr>
+                        <h3>Pilih Pembayaran</h3>
+                        <select name="pembayaran" id="" class="form-control">
+                            @foreach ($bank as $bank)
+                            <option value="{{$bank->bank_id}}">{{$bank->bank->name}} -
+                                {{$bank->account_no}} a.n. {{$bank->account_name}}</span></option>
+                            @endforeach
+                        </select>
+                    </div>
+                    <div class="col-lg-2 mt-3">
+                        <button type="submit" class="btn btn-primary">Process</button>
+                    </div>
+                </form>
             </div>
         </div>
     </div>

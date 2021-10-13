@@ -338,6 +338,7 @@
     <!-- JavaScripts
 	============================================= -->
     <script src="{!!asset('webpage/js/jquery.js')!!}"></script>
+    <script src="{!!asset('webpage/plugins/popper/popper.min.js')!!}"></script>
     <script src="{!!asset('webpage/js/plugins.min.js')!!}"></script>
 
     <!-- Footer Scripts

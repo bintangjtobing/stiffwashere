@@ -82,7 +82,7 @@
 
                             </div>
 
-                            <div class="line"></div>
+                            {{-- <div class="line"></div> --}}
 
                             <!-- Product Single - Quantity & Cart Button
 									============================================= -->
@@ -91,11 +91,11 @@
                                 <button type="submit" class="add-to-cart button m-0">Add to cart</button>
                             </form><!-- Product Single - Quantity & Cart Button End -->
 
-                            <div class="line"></div>
+                            {{-- <div class="line"></div> --}}
 
                             <!-- Product Single - Short Description
 									============================================= -->
-                            {!!$item[0]->descriptions!!}
+                            {{$item[0]->descriptions}}
                             <!-- Product Single - Short Description End -->
 
                             <!-- Product Single - Meta

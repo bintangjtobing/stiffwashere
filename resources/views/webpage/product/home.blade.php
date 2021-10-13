@@ -45,7 +45,9 @@
                                         class="cart-btn button button-white button-light">> See the products
                                         <</a> </div> <div class="product-desc">
                                             <div class="product-title">
-                                                <h3><a href="#">{{$item->name}}</a></h3>
+                                                <h3><a
+                                                        href="/products/{{$item->itemgroup_id}}/{{$item->id}}">{{$item->name}}</a>
+                                                </h3>
                                                 <span><a href="#">stiffwashere</a></span>
                                             </div>
                                 </div>

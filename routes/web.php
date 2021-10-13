@@ -56,10 +56,12 @@ Route::get('/privacy-policy', 'webpageController@privacyPolicy');
 Route::post('/subscription/new', 'webpageController@addSubscription');
 Route::post('/send-message', 'webpageController@sendMessage');
 Route::get('/cart', 'webpageController@cart');
+Route::get('/payment', 'webpageController@payment');
 
 // Advanced
 Route::get('/products/{itemgroup_id}', 'webpageController@getItemFromItemGroup');
 Route::get('/products/{itemgroup_id}/{id}', 'webpageController@getItemDetailsFromItemGroup');
 Route::get('/products/{stockgroup_id}/{id}', 'webpageController@getItemDetailsFromStockGroup');
 Route::get('/add-card/{id}', 'webpageController@addToCart');
+Route::post('/checkout', 'webpageController@checkout');
 Route::delete('remove-from-cart', 'webpageController@removeitem');
