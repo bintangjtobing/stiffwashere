@@ -1,5 +1,6 @@
 <p align="center"><a href="https://stiffwashere.id" target="_blank"><img src="https://res.cloudinary.com/boxity-id/image/upload/v1634100442/client/stiffwashere/putih_aat9mb.png" width="400"></a></p>
-![BOXITY](powered_by.png)(https://boxity.id)
+
+![boxity](powered_by.png)
 
 ## About Stiffwashere
 
