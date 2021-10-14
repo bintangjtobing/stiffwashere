@@ -160,7 +160,7 @@
                                             <div class="slider-wrap">
                                                 @foreach ($item->img as $imgs)
                                                 <div class="slide">
-                                                    <a href="#"><img src="{{$imgs->file}}" alt="Emotional Shirts"></a>
+                                                    <img src="{{$imgs->file}}" alt="Emotional Shirts">
                                                 </div>
                                                 @endforeach
                                             </div>
@@ -170,8 +170,8 @@
                                         class="cart-btn button button-white button-light">> See the products
                                         <</a> </div> <div class="product-desc">
                                             <div class="product-title">
-                                                <h3><a href="#">{{$item->name}}</a></h3>
-                                                <span><a href="#">stiffwashere</a></span>
+                                                <h3><a href="/products/{{$item->itemgroup_id}}">{{$item->name}}</a></h3>
+                                                <span>stiffwashere</span>
                                             </div>
                                 </div>
                             </div>
