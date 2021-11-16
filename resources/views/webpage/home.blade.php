@@ -160,7 +160,7 @@
                                             <div class="slider-wrap">
                                                 @foreach ($item->img as $imgs)
                                                 <div class="slide">
-                                                    <img src="{{$imgs->file}}" alt="Emotional Shirts">
+                                                    <img src="{{$imgs->file}}">
                                                 </div>
                                                 @endforeach
                                             </div>

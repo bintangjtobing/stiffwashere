@@ -395,6 +395,59 @@
                         setelah posting perubahan apa pun pada Ketentuan Layanan ini merupakan penerimaan atas perubahan
                         tersebut.
                     </p>
+                    <h2 id="garansi-free-return" class="h2 fw-bold mb-4">
+                        <a href="#garansi-free-return">#BAGIAN 20 - GARANSI FREE RETURN 3 HARI</a>
+                    </h2>
+                    <p class="text-justify">
+                        Garansi Free Return Berlaku Untuk Semua Produk.
+                        * Garansi Produk berlaku selama 3 Hari, terhitung sejak paket diterima oleh buyer.
+                        * Apabila ditemukan Produk Reject / Salah Kirim, anda dapat mengirimkan email Klaim Garansi ke
+                        kami.
+                        * Ongkos Kirim paket ditanggung oleh Kami
+                        <br>
+                        Garansi Free Return Berlaku Bila:
+                        * Produk Yg Di Kirim Tidak Sesuai Dgn Deskripsi Produk.
+                        * Produk Yg Di Kirim Tidak Sesuai Pesanan (Salah Kirim Type/Warna/Ukuran).
+                        * Produk Mayor Reject (Ditemukan Jahitan Lepas/Bolong/Sobek)
+                        <br>
+                        Garansi Free Return Tidak Berlaku Bila:
+                        * Paket yg dikirim sudah sesuai dengan pesanan
+                        * Warna Sudah Sesuai Gambar, Tapi Beda Motif (Patokkan Pemesanan Adalah Kode Warna Dasar, Bukan
+                        Motif.
+                        Karena Motif Dari Pabrik Sering Berubah-Ubah)
+                        * Kesalahan pengiriman disebabkan oleh kesalahan penulisan Format kode pada saat pemesanan
+                        (Termasuk Jika Tidak Menuliskan Warna/Kode/Ukuran, Maka Akan Di Kirimkan Random)
+                        * Salah pesan ukuran (kekecilan/kebesaran. pola dasar ukuran dapat dilihat di Deskripsi
+                        Produk/Gambar)
+                        * Produk Tersebut sudah dipakai/dicuci
+                        * Hangtag/Label sudah terlepas dari Produk.
+                        * Terdapat noda halus/kerusakan ringan yg bersifat insidensial.
+                        * Hal2 lainnya yg termasuk dalam minor reject dan tidak mempengaruhi tampilan produk secara umum
+                        ketika dipakai
+                        * Detail ukuran di bandingkan dengan produk yang lain. (ukuran harus dibandingkan nya ke
+                        Deskripsi Produk/Gambar)
+                        * Mengirim Email Klaim garansi melebihi batas waktu pertanggungan ( 7 Hari setelah paket
+                        diterima )
+                        <br>
+                        PENTING, HARAP DI PERHATIKAN
+                        Cara Kirim Email untuk Klaim Garansi
+                        * Melampirkan tanggal dan data lengkap pada saat order.
+                        * Menuliskan keterangan alasan klaim garansi : (Salah Kirim / Salah Ukuran / Reject Produk)
+                        * Melampirkan Foto pendukung yang dibutuhkan (foto Produk / packing / delivery note / Hang tag /
+                        Label / Foto Pengukuran)
+                        * Melampirkan foto / scan / bukti pembayaran ketika buyer membeli kaos tsb.
+                        Subject Email : [Klaim Garansi] Nomor Invoice/Pesanan
+                        email Dikirim ke (Hubungi Kami Untuk Info Lebih Lanjut)
+                        <br>
+
+                        * Jika Klaim Garansi Di Setujui, Kami Akan Menginformasikan Alamat Pengiriman Pengembalian
+                        Produk.
+                        * Kami Akan Mengirimkan Produk Pengganti, Maximal 2X24 Jam, Setelah Kami Menerima Resi
+                        Pengiriman Produk yg Di Kembalikan.
+                        <br>
+                        ** Hal-Hal yg Belum Tercantum di Atas, Akan Di Putuskan Sesuai Kebijakkan dan Kesepakatan Antara
+                        Penjual dan Pembeli.
+                    </p>
                     <h2 id="informasi-kontak" class="h2 fw-bold mb-4"><a href="#informasi-kontak">#BAGIAN 20 - INFORMASI
                             KONTAK</a></h2>
                     <p class="text-justify">Pertanyaan tentang Ketentuan Layanan harus dikirimkan kepada kami di
