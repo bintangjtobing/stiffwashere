@@ -84,8 +84,8 @@ div.mt-2>div:nth-child(2)>div:nth-child(1)>img:nth-child(1) {
 @media (min-width: 481px) and (max-width: 767px) {
 
     /* CSS */
-    .standard-logo,
-    .retina-logo {
+    .standard-logo>img:nth-child(1),
+    .retina-logo>img:nth-child(1) {
         width: auto;
         height: 30px !important;
     }
@@ -98,8 +98,8 @@ div.mt-2>div:nth-child(2)>div:nth-child(1)>img:nth-child(1) {
 
 @media (min-width: 320px) and (max-width: 480px) {
 
-    .standard-logo,
-    .retina-logo {
+    .standard-logo>img:nth-child(1),
+    .retina-logo>img:nth-child(1) {
         width: auto;
         height: 30px !important;
     }
