@@ -1,5 +1,5 @@
 .header-size-custom #logo img {
-    height: 40px;
+    height: 40px !important;
 }
 
 .justify-content-between>div:nth-child(1)>abbr:nth-child(2)>a:nth-child(1) {
