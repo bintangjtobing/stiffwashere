@@ -8,11 +8,18 @@
     data-bottom-top="background-position: 50% 200px;" data-top-bottom="background-position: 50% -200px;">
 
     <div class="container clearfix">
+        @if (!$item->isEmpty())
         <h1>{{$item[0]->name}}</h1>
         <ol class="breadcrumb">
             <li class="breadcrumb-item"><a href="#">Home</a></li>
             <li class="breadcrumb-item active" aria-current="page">{{$item[0]->name}}</li>
         </ol>
+        @else
+        <h1>No products here</h1>
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="#">Home</a></li>
+        </ol>
+        @endif
     </div>
 
 </section><!-- #page-title end -->
@@ -35,6 +42,7 @@
             </div>
             @endif
             <div class="row justify-content-between">
+                @if (!$item->isEmpty())
                 <div class="col-md-12">
                     <h1>{{$item[0]->name}}</h1>
                     <p>{!!$item[0]->remarks!!}</p>
@@ -72,6 +80,12 @@
                         @endforeach
                     </div>
                 </div>
+                @else
+                <div class="col-md-12">
+                    <h1>No Products here</h1>
+                    <p>No Products here</p>
+                </div>
+                @endif
             </div>
             <div class="clear my-5"></div>
         </div>
