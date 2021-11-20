@@ -102,11 +102,13 @@
 						============================================= -->
                         <div id="logo" class="mr-lg-0">
                             <a href="/" class="standard-logo"
-                                data-dark-logo="{!!asset('webpage/asset/logo/putih.png')!!}"><img
-                                    src="{!!asset('webpage/asset/logo/hitam.png')!!}" alt="Stiffwashere Logo"></a>
+                                data-dark-logo="{!!asset('webpage/asset/logo/putih1-02-putih.png')!!}"><img
+                                    src="{!!asset('webpage/asset/logo/putih1-02-black.png')!!}"
+                                    alt="Stiffwashere Logo"></a>
                             <a href="/" class="retina-logo"
-                                data-dark-logo="{!!asset('webpage/asset/logo/putih.png')!!}"><img
-                                    src="{!!asset('webpage/asset/logo/hitam.png')!!}" alt="Stiffwashere Logo"></a>
+                                data-dark-logo="{!!asset('webpage/asset/logo/putih1-02-putih.png')!!}"><img
+                                    src="{!!asset('webpage/asset/logo/putih1-02-black.png')!!}"
+                                    alt="Stiffwashere Logo"></a>
                         </div><!-- #logo end -->
 
                         <div class="header-misc">
