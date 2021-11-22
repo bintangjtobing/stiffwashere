@@ -105,15 +105,12 @@
             <div class="row mt-4">
                 <div class="col-lg-4 col-md-6">
                     <h2 class="h1 fw-bold mb-4">Jakarta Store</h2>
-                    <h4> Jl. K.H. Mas Mansyur No.121, RT.10/RW.11, <br>
-                        Karet
-                        Tengsin, Kecamatan Tanah Abang, Kota Jakarta
-                        Pusat, <br> Daerah Khusus Ibukota Jakarta 10220
+                    <h4> {{$company->address}}
                     </h4>
                     <abbr title="Phone Number"><strong>Phone:</strong></abbr>
-                    +62 821-1776-8806<br>
+                    {{$company->phone}}<br>
                     <abbr title="Email Address"><strong>Email:</strong></abbr>
-                    info@stiffwashere.id
+                    {{$company->email}}
                     <div class="mt-4">
                         <a href="#" class="social-icon si-small si-colored rounded-0 si-facebook" title="Facebook">
                             <i class="icon-facebook"></i>

@@ -107,7 +107,9 @@ class webpageController extends Controller
     }
     public function contactUs()
     {
-        return view('webpage.contactus');
+        $company =
+            DB::table('company_details')->first();
+        return view('webpage.contactus', ['company' => $company]);
     }
     public function aboutUs()
     {
