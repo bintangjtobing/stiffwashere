@@ -38,7 +38,7 @@
     <link rel="shortcut icon" href="{!!asset('256.png')!!}" type="image/png" sizes="64x64">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="description" content="{{$company->meta_description ? $company->meta_description: ""}}">
-    <meta name="keywords" content="{{$company->meta_keywords ? ''}}">
+    <meta name="keywords" content="{{$company->meta_keywords ? $company->meta_keywords: ""}}">
 </head>
 
 <body class="stretched modal-subscribe-bottom">
@@ -268,8 +268,10 @@
                         <div class="col-md-3 col-sm-6">
                             <h4 class="text-uppercase">Customer Service</h4>
                             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
-                            <abbr title="Phone Number"><strong>Phone:</strong></abbr> {{$company->phone ? ''}}<br>
-                            <abbr title="Email Address"><strong>Email:</strong></abbr> {{$company->email ? ''}}<br>
+                            <abbr title="Phone Number"><strong>Phone:</strong></abbr>
+                            {{$company->phone ? $company->phone: ""}}<br>
+                            <abbr title="Email Address"><strong>Email:</strong></abbr>
+                            {{$company->email ? $company->email: ""}}<br>
 
                             <a href="#" class="social-icon si-small si-light si-rounded si-facebook mt-4 mr-2">
                                 <i class="icon-facebook"></i>
@@ -289,7 +291,7 @@
                             <h4 class="text-uppercase">Our Stores</h4>
                             <address>
                                 <strong>Jakarta Store:</strong><br>
-                                {{$company->address ? ''}}
+                                {{$company->address ? $company->address: ""}}
                             </address>
                             <abbr title="Time"><strong>Timing:</strong></abbr> Every day: 10am – 7pm<br>
                         </div>
