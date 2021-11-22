@@ -37,7 +37,7 @@
     <title>@yield('titlepage') - Stiff Was Here | Apparel & Clothes</title>
     <link rel="shortcut icon" href="{!!asset('256.png')!!}" type="image/png" sizes="64x64">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="description" content="{{$company->meta_description ? ''}}">
+    <meta name="description" content="{{$company->meta_description ? $company->meta_description: ""}}">
     <meta name="keywords" content="{{$company->meta_keywords ? ''}}">
 </head>
 
@@ -268,7 +268,7 @@
                         <div class="col-md-3 col-sm-6">
                             <h4 class="text-uppercase">Customer Service</h4>
                             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
-                            <abbr title="Phone Number"><strong>Phone:</strong></abbr> {{$company->phone ?? ''}}<br>
+                            <abbr title="Phone Number"><strong>Phone:</strong></abbr> {{$company->phone ? ''}}<br>
                             <abbr title="Email Address"><strong>Email:</strong></abbr> {{$company->email ? ''}}<br>
 
                             <a href="#" class="social-icon si-small si-light si-rounded si-facebook mt-4 mr-2">
