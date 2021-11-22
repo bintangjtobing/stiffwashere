@@ -268,7 +268,7 @@
                         <div class="col-md-3 col-sm-6">
                             <h4 class="text-uppercase">Customer Service</h4>
                             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
-                            <abbr title="Phone Number"><strong>Phone:</strong></abbr> {{$company->phone ? ''}}<br>
+                            <abbr title="Phone Number"><strong>Phone:</strong></abbr> {{$company->phone ?? ''}}<br>
                             <abbr title="Email Address"><strong>Email:</strong></abbr> {{$company->email ? ''}}<br>
 
                             <a href="#" class="social-icon si-small si-light si-rounded si-facebook mt-4 mr-2">
