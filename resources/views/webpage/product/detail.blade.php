@@ -105,16 +105,12 @@
 
                                 <!-- Product Single - Meta
 									============================================= -->
-                                {{-- <div class="card product-meta mt-4 mb-5 rounded-0">
+                                <div class="card product-meta mt-4 mb-5 rounded-0">
                                     <div class="card-body">
-                                        <span itemprop="productID" class="sku_wrapper">SKU: <span
-                                                class="sku">8465415</span></span>
-                                        <span class="posted_in">Category: <a href="#" rel="tag">Dress</a>.</span>
-                                        <span class="tagged_as">Tags: <a href="#" rel="tag">Pink</a>, <a href="#"
-                                                rel="tag">Short</a>, <a href="#" rel="tag">Dress</a>, <a href="#"
-                                                rel="tag">Printed</a>.</span>
+                                        <span itemprop="productID" class="sku_wrapper">Available quantity: <span
+                                                class="sku">{{$item[0]->qty}} {{$item[0]->unit}}</span></span>
                                     </div>
-                                </div><!-- Product Single - Meta End --> --}}
+                                </div><!-- Product Single - Meta End -->
 
                                 {{-- <div>
                                     <h4>Product Details</h4>
