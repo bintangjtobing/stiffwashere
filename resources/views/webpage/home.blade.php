@@ -109,7 +109,7 @@
         </div>
 
         <div class="container-fluid">
-            <div class="row mt-2">
+            <div class="row mt-2 justify-content-center">
                 @foreach ($stocks as $itemStock)
                 <div class="col-md-6 mb-5">
                     <div class="card cat-card rounded-0 border-0 dark">
