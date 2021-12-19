@@ -112,12 +112,12 @@
                     <abbr title="Email Address"><strong>Email:</strong></abbr>
                     {{$company->email}}
                     <div class="mt-4">
-                        <a href="#" class="social-icon si-small si-colored rounded-0 si-facebook" title="Facebook">
+                        <a href="/facebook" class="social-icon si-small si-colored rounded-0 si-facebook" title="Facebook">
                             <i class="icon-facebook"></i>
                             <i class="icon-facebook"></i>
                         </a>
 
-                        <a href="#" class="social-icon si-small si-colored rounded-0 si-instagram" title="instagram">
+                        <a href="/instagram" class="social-icon si-small si-colored rounded-0 si-instagram" title="instagram">
                             <i class="icon-instagram"></i>
                             <i class="icon-instagram"></i>
                         </a>
