@@ -310,9 +310,12 @@
                             &copy;{{$Y}} Stiff Was Here - All Rights Reserved by <abbr
                                 title="MeAndCreativeLab CC">MeAndCreativeLab</abbr> | Partnership with
                             <abbr title="Boxity App"><a href="https://boxity.id">Boxity Central Indonesia</a></abbr><br>
-                            <div class="copyright-links"><a href="/terms-condition">Terms and condition</a> / <a
+                            <div class="copyright-links">
+                                <a href="/terms-condition">Terms and condition</a>
+                                {{-- /
+                                <a
                                     href="#">Privacy
-                                    Policy</a>
+                                    Policy</a> --}}
                             </div>
                         </div>
 
