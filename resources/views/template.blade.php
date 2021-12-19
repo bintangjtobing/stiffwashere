@@ -32,6 +32,24 @@
     <script src="https://kit.fontawesome.com/bf3b9c3659.js')!!}" crossorigin="anonymous"></script>
     <!-- / -->
 
+    {{-- Meta --}}
+    <meta name="og:title" property="og:title" content="Stiff Was Here" />
+    <meta name="og:url" property="og:url" content="https://stiffwashere.id" />
+    <meta name="og:type" property="og:type" content="website" />
+    <meta name="og:image" property="og:image"
+        content="https://res.cloudinary.com/boxity-id/image/upload/v1639938786/stiffwashere/meta_u5lhtw.pnghttps://res.cloudinary.com/boxity-id/image/upload/v1639938786/stiffwashere/meta_u5lhtw.png" />
+    <meta name="og:description" property="og:description"
+        content="Daring to get out there and expressing confidence is something that everyone must do. Not only we believe in that, but we also strive to help you with it. STIFF WAS HERE is a brand that turned restlessness that happens in Society into a work of fashion. We made shirts with rayon material and outerwear with canvas suede material to help increase your comfort level in expressing your confidence." />
+    <meta name="twitter:card" content="Stiff Was Here" />
+    <meta name="twitter:title" property="og:title" content="Stiff Was Here" />
+    <meta name="twitter:url" property="og:url" content="https://stiffwashere.id" />
+    <meta name="twitter:type" property="og:type" content="website" />
+    <meta name="twitter:image" property="og:image"
+        content="https://res.cloudinary.com/boxity-id/image/upload/v1639938786/stiffwashere/meta_u5lhtw.pnghttps://res.cloudinary.com/boxity-id/image/upload/v1639938786/stiffwashere/meta_u5lhtw.png" />
+    <meta name="twitter:description" property="og:description"
+        content="Daring to get out there and expressing confidence is something that everyone must do. Not only we believe in that, but we also strive to help you with it. STIFF WAS HERE is a brand that turned restlessness that happens in Society into a work of fashion. We made shirts with rayon material and outerwear with canvas suede material to help increase your comfort level in expressing your confidence." />
+    <link rel="canonical" href="https://stiffwashere.id/" />
+
     <!-- Document Title
 	============================================= -->
     <title>@yield('titlepage') - Stiff Was Here | Apparel & Clothes</title>
