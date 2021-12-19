@@ -32,10 +32,10 @@ Route::get('/clear-view', function () {
 
 // Social Media Redirect
 Route::get('/facebook', function () {
-    return Redirect::to('https://facebook.com/');
+    return Redirect::to('https://facebook.com/stiffwashere');
 });
 Route::get('/instagram', function () {
-    return Redirect::to('https://www.instagram.com/');
+    return Redirect::to('https://www.instagram.com/stiffwashere');
 });
 Route::get('/youtube', function () {
     return Redirect::to('https://www.youtube.com/c/');

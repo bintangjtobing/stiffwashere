@@ -275,11 +275,12 @@
                             <abbr title="Email Address"><strong>Email:</strong></abbr>
                             {{$company->email ? $company->email: ""}}<br>
 
-                            <a href="#" class="social-icon si-small si-light si-rounded si-facebook mt-4 mr-2">
+                            <a href="/facebook" class="social-icon si-small si-light si-rounded si-facebook mt-4 mr-2">
                                 <i class="icon-facebook"></i>
                                 <i class="icon-facebook"></i>
                             </a>
-                            <a href="#" class="social-icon si-small si-light si-rounded si-instagram mt-4 mr-2">
+                            <a href="/instagram"
+                                class="social-icon si-small si-light si-rounded si-instagram mt-4 mr-2">
                                 <i class="icon-instagram"></i>
                                 <i class="icon-instagram"></i>
                             </a>

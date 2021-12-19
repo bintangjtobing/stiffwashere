@@ -41,31 +41,31 @@
                             <tbody>
                                 <tr>
                                     <td>S</td>
-                                    <td style="text-align:center;">67</td>
-                                    <td style="text-align:center;">48</td>
-                                    <td style="text-align:center;">54</td>
-                                    <td style="text-align:center;">24</td>
+                                    <td style="text-align:center;">67 cm</td>
+                                    <td style="text-align:center;">48 cm</td>
+                                    <td style="text-align:center;">54 cm</td>
+                                    <td style="text-align:center;">24 cm</td>
                                 </tr>
                                 <tr>
                                     <td>M</td>
-                                    <td style="text-align:center;">69</td>
-                                    <td style="text-align:center;">50</td>
-                                    <td style="text-align:center;">56</td>
-                                    <td style="text-align:center;">25</td>
+                                    <td style="text-align:center;">69 cm</td>
+                                    <td style="text-align:center;">50 cm</td>
+                                    <td style="text-align:center;">56 cm</td>
+                                    <td style="text-align:center;">25 cm</td>
                                 </tr>
                                 <tr>
                                     <td>L</td>
-                                    <td style="text-align:center;">71</td>
-                                    <td style="text-align:center;">52</td>
-                                    <td style="text-align:center;">58</td>
-                                    <td style="text-align:center;">26</td>
+                                    <td style="text-align:center;">71 cm</td>
+                                    <td style="text-align:center;">52 cm</td>
+                                    <td style="text-align:center;">58 cm</td>
+                                    <td style="text-align:center;">26 cm</td>
                                 </tr>
                                 <tr>
                                     <td>XL</td>
-                                    <td style="text-align:center;">73</td>
-                                    <td style="text-align:center;">54</td>
-                                    <td style="text-align:center;">60</td>
-                                    <td style="text-align:center;">27</td>
+                                    <td style="text-align:center;">73 cm</td>
+                                    <td style="text-align:center;">54 cm</td>
+                                    <td style="text-align:center;">60 cm</td>
+                                    <td style="text-align:center;">27 cm</td>
                                 </tr>
                             </tbody>
                         </table>
@@ -87,35 +87,35 @@
                             <tbody>
                                 <tr>
                                     <td>S</td>
-                                    <td style="text-align:center">71</td>
-                                    <td style="text-align:center">50</td>
-                                    <td style="text-align:center">99</td>
-                                    <td style="text-align:center">75</td>
-                                    <td style="text-align:center">98</td>
+                                    <td style="text-align:center">71 cm</td>
+                                    <td style="text-align:center">50 cm</td>
+                                    <td style="text-align:center">99 cm</td>
+                                    <td style="text-align:center">75 cm</td>
+                                    <td style="text-align:center">98 cm</td>
                                 </tr>
                                 <tr>
                                     <td>M</td>
-                                    <td style="text-align:center">73</td>
-                                    <td style="text-align:center">52</td>
-                                    <td style="text-align:center">107</td>
-                                    <td style="text-align:center">77</td>
-                                    <td style="text-align:center">104</td>
+                                    <td style="text-align:center">73 cm</td>
+                                    <td style="text-align:center">52 cm</td>
+                                    <td style="text-align:center">107 cm</td>
+                                    <td style="text-align:center">77 cm</td>
+                                    <td style="text-align:center">104 cm</td>
                                 </tr>
                                 <tr>
                                     <td>L</td>
-                                    <td style="text-align:center">75</td>
-                                    <td style="text-align:center">54</td>
-                                    <td style="text-align:center">115</td>
-                                    <td style="text-align:center">79</td>
-                                    <td style="text-align:center">110</td>
+                                    <td style="text-align:center">75 cm</td>
+                                    <td style="text-align:center">54 cm</td>
+                                    <td style="text-align:center">115 cm</td>
+                                    <td style="text-align:center">79 cm</td>
+                                    <td style="text-align:center">110 cm</td>
                                 </tr>
                                 <tr>
                                     <td>XL</td>
-                                    <td style="text-align:center">77</td>
-                                    <td style="text-align:center">56</td>
-                                    <td style="text-align:center">124</td>
-                                    <td style="text-align:center">81</td>
-                                    <td style="text-align:center">117</td>
+                                    <td style="text-align:center">77 cm</td>
+                                    <td style="text-align:center">56 cm</td>
+                                    <td style="text-align:center">124 cm</td>
+                                    <td style="text-align:center">81 cm</td>
+                                    <td style="text-align:center">117 cm</td>
                                 </tr>
                             </tbody>
                         </table>
