@@ -205,10 +205,10 @@
                                                     </li>
                                                 </ul>
                                                 <ul class="mega-menu-column sub-menu-container col-lg-4 border-left-0">
-                                                    <li class="mega-menu-title menu-item"><a class="menu-link" href="#">
+                                                    <li class="mega-menu-title menu-item"><a class="menu-link" href="/terms-condition">
                                                             <div>FAQs</div>
                                                         </a>
-                                                        <ul class="sub-menu-container">
+                                                        {{-- <ul class="sub-menu-container">
                                                             <li class="menu-item"><a class="menu-link" href="#">
                                                                     <div>Q. How do I purchase an item?</div>
                                                                 </a></li>
@@ -225,7 +225,7 @@
                                                             <li class="menu-item"><a class="menu-link" href="#">
                                                                     <div>Q. Is there any hidden Charges?</div>
                                                                 </a></li>
-                                                        </ul>
+                                                        </ul> --}}
                                                     </li>
                                                 </ul>
                                             </div>
@@ -281,10 +281,6 @@
                                 <i class="icon-instagram"></i>
                                 <i class="icon-instagram"></i>
                             </a>
-                            <a href="#" class="social-icon si-small si-light si-rounded si-youtube mt-4 mr-2">
-                                <i class="icon-youtube"></i>
-                                <i class="icon-youtube"></i>
-                            </a>
                         </div>
 
                         <div class="col-md-6 col-sm-6">
@@ -319,7 +315,7 @@
 
                         <div class="col-md-6 d-md-flex flex-md-column align-items-md-end mt-4 mt-md-0">
                             <div class="copyrights-menu copyright-links clearfix">
-                                <a href="#">About</a>/<a href="#">Features</a>/<a href="#">FAQs</a>/<a href="#">Contact
+                                <a href="/about-us">About</a>/<a href="#">Features</a>/<a href="#">FAQs</a>/<a href="/contact-us">Contact
                                     Us</a>
                             </div>
                         </div>
