@@ -25,7 +25,7 @@
         <div class="container">
             <div class="row justify-content-between">
                 <div class="col-lg-12 col-md-12">
-                    <h2 id="size-chart-kemeja" class="h2 fw-bold mb-4"><a href="#size-chart-kemeja">#Size Chart Kemeja
+                    <h2 id="kemeja" class="h2 fw-bold mb-4"><a href="#kemeja">#Size Chart Kemeja
                             <b>"Stiff Was Here"</b></a></h2>
                     <div class="table-responsive">
                         <table class="table">
@@ -70,7 +70,7 @@
                             </tbody>
                         </table>
                     </div>
-                    <h2 id="size-chart-outer" class="h2 fw-bold mb-4"><a href="#size-chart-outer">#Size Chart Outer
+                    <h2 id="outer" class="h2 fw-bold mb-4"><a href="#outer">#Size Chart Outer
                             <b>"Stiff Was Here"</b></a></h2>
                     <div class="table-responsive">
                         <table class="table">
