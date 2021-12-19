@@ -305,7 +305,7 @@
                 <div class="container-fluid clearfix">
 
                     <div class="row justify-content-between align-items-center">
-                        <div class="col-md-6">
+                        <div class="col-md-8">
                             <?php $Y=Date('Y'); ?>
                             &copy;{{$Y}} Stiff Was Here - All Rights Reserved by <abbr
                                 title="MeAndCreativeLab CC">MeAndCreativeLab</abbr> | Partnership with
@@ -319,7 +319,7 @@
                             </div>
                         </div>
 
-                        <div class="col-md-6 d-md-flex flex-md-column align-items-md-end mt-4 mt-md-0">
+                        <div class="col-md-4 d-md-flex flex-md-column align-items-md-end mt-4 mt-md-0">
                             <div class="copyrights-menu copyright-links clearfix">
                                 <a href="/about-us">About</a>/<a href="/contact-us">Contact
                                     Us</a>
