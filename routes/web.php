@@ -53,6 +53,7 @@ Route::get('/outerwear', 'webpageController@outerwear');
 Route::get('/group/{stockgroup_id}', 'webpageController@groupProduct');
 Route::get('/terms-condition', 'webpageController@termsCondition');
 Route::get('/privacy-policy', 'webpageController@privacyPolicy');
+Route::get('/size-chart', 'webpageController@sizeChart');
 Route::post('/subscription/new', 'webpageController@addSubscription');
 Route::post('/send-message', 'webpageController@sendMessage');
 Route::get('/cart', 'webpageController@cart');

@@ -189,7 +189,8 @@
                                                             <li class="menu-item"><a class="menu-link" href="/about-us">
                                                                     <div>About Us</div>
                                                                 </a></li>
-                                                            <li class="menu-item"><a class="menu-link" href="#">
+                                                            <li class="menu-item"><a class="menu-link"
+                                                                    href="/size-chart">
                                                                     <div>Size Chart</div>
                                                                 </a></li>
                                                             {{-- <li class="menu-item"><a class="menu-link" href="#">
@@ -205,7 +206,8 @@
                                                     </li>
                                                 </ul>
                                                 <ul class="mega-menu-column sub-menu-container col-lg-4 border-left-0">
-                                                    <li class="mega-menu-title menu-item"><a class="menu-link" href="/terms-condition">
+                                                    <li class="mega-menu-title menu-item"><a class="menu-link"
+                                                            href="/terms-condition">
                                                             <div>FAQs</div>
                                                         </a>
                                                         {{-- <ul class="sub-menu-container">
@@ -315,7 +317,8 @@
 
                         <div class="col-md-6 d-md-flex flex-md-column align-items-md-end mt-4 mt-md-0">
                             <div class="copyrights-menu copyright-links clearfix">
-                                <a href="/about-us">About</a>/<a href="#">Features</a>/<a href="#">FAQs</a>/<a href="/contact-us">Contact
+                                <a href="/about-us">About</a>/<a href="#">Features</a>/<a href="#">FAQs</a>/<a
+                                    href="/contact-us">Contact
                                     Us</a>
                             </div>
                         </div>

@@ -81,7 +81,7 @@
                                 </div>
                             </div>
                             <span>Kode unik untuk mempercepat proses pengecekan.</span>
-                            <a href="https://api.whatsapp.com/send?phone=6281262845980&text=Hi%20Stiffwashere!%20Saya%20ingin%20konfirmasi%20transfer%20untuk%20pemesanan%20dengan%20nomor%20order%20%23{{$soNumber}}.%0ASilahkan%20lihat%20bukti%20pembayaran%20yang%20saya%20kirim.%0ATerima%20kasih."
+                            <a href="https://api.whatsapp.com/send?phone=6282124351924&text=Hi%20Stiffwashere!%20Saya%20ingin%20konfirmasi%20transfer%20untuk%20pemesanan%20dengan%20nomor%20order%20%23{{$soNumber}}.%0ASilahkan%20lihat%20bukti%20pembayaran%20yang%20saya%20kirim.%0ATerima%20kasih."
                                 class="btn btn-primary btn-block btn-md mt-4 mb-2">Konfirmasi
                                 transfer</a>
                             <a href="/" class="btn btn-secondary btn-block btn-md">Close</a>

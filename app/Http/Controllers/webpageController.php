@@ -139,6 +139,10 @@ class webpageController extends Controller
     {
         return view('webpage.ToSPP.policy');
     }
+    public function sizeChart()
+    {
+        return view('webpage.ToSPP.sizeChart');
+    }
     public function termsCondition()
     {
         return view('webpage.ToSPP.terms');
