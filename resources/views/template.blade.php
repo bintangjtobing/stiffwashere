@@ -192,7 +192,7 @@
                                                             <li class="menu-item"><a class="menu-link" href="#">
                                                                     <div>Size Chart</div>
                                                                 </a></li>
-                                                            <li class="menu-item"><a class="menu-link" href="#">
+                                                            {{-- <li class="menu-item"><a class="menu-link" href="#">
                                                                     <div>Our Policies</div>
                                                                 </a></li>
                                                             <li class="menu-item"><a class="menu-link" href="#">
@@ -200,7 +200,7 @@
                                                                 </a></li>
                                                             <li class="menu-item"><a class="menu-link" href="#">
                                                                     <div>Payments</div>
-                                                                </a></li>
+                                                                </a></li> --}}
                                                         </ul>
                                                     </li>
                                                 </ul>
@@ -266,8 +266,8 @@
                                 effective expertise for installed base e-markets.</p>
                         </div>
                         <div class="col-md-3 col-sm-6">
-                            <h4 class="text-uppercase">Customer Service</h4>
-                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                            <h4 class="text-uppercase">How to reach</h4>
+                            <p></p>
                             <abbr title="Phone Number"><strong>Phone:</strong></abbr>
                             {{$company->phone ? $company->phone: ""}}<br>
                             <abbr title="Email Address"><strong>Email:</strong></abbr>
