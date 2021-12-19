@@ -317,8 +317,7 @@
 
                         <div class="col-md-6 d-md-flex flex-md-column align-items-md-end mt-4 mt-md-0">
                             <div class="copyrights-menu copyright-links clearfix">
-                                <a href="/about-us">About</a>/<a href="#">Features</a>/<a href="#">FAQs</a>/<a
-                                    href="/contact-us">Contact
+                                <a href="/about-us">About</a>/<a href="/contact-us">Contact
                                     Us</a>
                             </div>
                         </div>
