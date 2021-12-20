@@ -258,8 +258,8 @@ class webpageController extends Controller
         $itemsSales->qtyOrdered = 1;
         $itemsSales->qtyShipped = '0';
         $itemsSales->qtyReturns = '0';
-        $itemsSales->unit = $item->unit;
-        $itemsSales->price = $item->price;
+        $itemsSales->unit = $item->unit ?? 'Pcs';
+        $itemsSales->price = $item->price ?? '0';
 
         $itemsSales->salesingId = $request->so_number ?? '0';
         $itemsSales->so_status = $request->so_status ?? '1';
