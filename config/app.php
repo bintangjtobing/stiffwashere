@@ -161,6 +161,7 @@ return [
         Illuminate\Translation\TranslationServiceProvider::class,
         Illuminate\Validation\ValidationServiceProvider::class,
         Illuminate\View\ViewServiceProvider::class,
+        Understand\UnderstandLaravel5\UnderstandLaravel5ServiceProvider::class,
 
         /*
          * Package Service Providers...
